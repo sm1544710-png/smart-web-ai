@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Smart Web AI helps small businesses get modern, mobile-friendly websites with friendly AI-guided planning.">
+<title>Smart Web AI | Websites made smarter</title>
+<style>
+:root{--navy:#101a36;--blue:#4361ee;--cyan:#35c7d8;--ink:#17213b;--muted:#66718b;--paper:#f6f8fc;--white:#fff;--line:#e5eaf3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:1.18rem;font-weight:850;letter-spacing:-.5px;color:var(--navy);display:flex;align-items:center;gap:10px}.logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:#fff;font-weight:900}
+.links{display:flex;align-items:center;gap:25px;color:#4c5872;font-size:.94rem}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:12px 18px;font-weight:750;background:var(--blue);color:#fff;cursor:pointer;box-shadow:0 8px 22px #4361ee30}.btn.secondary{background:#edf1ff;color:var(--blue);box-shadow:none}.btn.small{padding:9px 14px}
+.hero{background:radial-gradient(circle at 85% 20%,#dffaff 0,transparent 30%),linear-gradient(130deg,#f5f7ff,#fff 60%);padding:82px 0 74px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}.eyebrow{display:inline-block;background:#e9edff;color:#3450d4;padding:7px 12px;border-radius:99px;font-size:.82rem;font-weight:800}.hero h1{font-size:clamp(2.6rem,5vw,4.4rem);line-height:1.06;letter-spacing:-2.7px;color:var(--navy);margin:18px 0}.gradient{background:linear-gradient(90deg,var(--blue),#11aebf);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:1.1rem;color:var(--muted);max-width:560px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.note{font-size:.82rem!important;margin-top:15px}
+.mock{background:#fff;border:1px solid #e4e9f5;border-radius:24px;padding:18px;box-shadow:0 28px 70px #1b2a541c;transform:rotate(1deg)}.mock-top{display:flex;gap:6px;margin-bottom:17px}.dot{height:8px;width:8px;border-radius:50%;background:#d6ddec}.mock-banner{background:linear-gradient(135deg,#14234b,#4361ee);border-radius:16px;padding:25px;color:white}.mock-banner small{opacity:.8}.mock-banner h3{font-size:1.6rem;line-height:1.2;margin:10px 0}.mock-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.mock-card{border:1px solid var(--line);border-radius:13px;padding:14px}.mock-card b{display:block;font-size:.9rem}.mock-card span{color:var(--muted);font-size:.78rem}
+section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.section-head h2{font-size:clamp(1.9rem,3.5vw,2.7rem);line-height:1.15;letter-spacing:-1.2px;color:var(--navy);margin:0 0 12px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:18px;padding:24px;background:#fff}.icon{width:44px;height:44px;border-radius:13px;background:#edf1ff;display:grid;place-items:center;font-size:1.35rem}.card h3{margin:14px 0 6px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:.94rem}
+.soft{background:var(--paper)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.num{font-size:.8rem;font-weight:850;color:var(--blue)}.step h3{margin:8px 0 5px;font-size:1.02rem}.step p{margin:0;color:var(--muted);font-size:.9rem}
+.form-area{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:start}.form-info{background:var(--navy);color:#fff;padding:30px;border-radius:20px}.form-info h2{font-size:2rem;line-height:1.15;margin:0 0 12px}.form-info p{color:#c4cde3}.form-info li{margin:10px 0;color:#e3e9f8}.lead-form{border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 12px 35px #1b2a540b}.field{margin-bottom:15px}.field label{display:block;font-size:.88rem;font-weight:750;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #dce3ef;border-radius:10px;font:inherit;background:#fff;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.lead-form .btn{width:100%}.disclaimer{font-size:.78rem;color:var(--muted);margin:12px 0 0}
+.faq{max-width:780px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:17px 0}.faq summary{font-weight:800;cursor:pointer;color:var(--navy)}.faq p{color:var(--muted);margin-bottom:0}
+footer{background:#0c1530;color:#d8e0f3;padding:34px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot small{color:#aeb9d2}
+#toast{display:none;margin-top:12px;padding:12px;background:#eaf8f0;border-radius:10px;color:#17633b;font-size:.9rem}
+@media(max-width:800px){.links a:not(.btn){display:none}.hero{padding:58px 0}.hero-grid,.form-area{grid-template-columns:1fr}.mock{max-width:540px;margin:auto}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.nav{height:64px}.brand{font-size:1rem}.links{gap:8px}.links .btn{font-size:.82rem;padding:9px 11px}.hero h1{letter-spacing:-1.5px}.cards,.steps{grid-template-columns:1fr}section{padding:58px 0}.lead-form{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="logo">S</span> Smart Web AI</a>
+<nav class="links"><a href="#services">Services</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a class="btn small" href="#start">Get a free plan</a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">SMARTER WEBSITES FOR SMALL BUSINESSES</span>
+<h1>Your business deserves a <span class="gradient">better website.</span></h1>
+<p>We help restaurants, clinics, salons, shops and service businesses plan a modern website that looks great on phones and makes it easier for customers to contact you.</p>
+<div class="actions"><a class="btn" href="#start">Start your free website plan →</a><a class="btn secondary" href="#services">Explore services</a></div>
+<p class="note">Free first consultation. No payment required to send an enquiry.</p>
+</div>
+<div class="mock" aria-label="Sample website preview"><div class="mock-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+<div class="mock-banner"><small>YOUR BUSINESS • YOUR BRAND</small><h3>A welcoming website that turns visits into enquiries.</h3><span>Mobile-friendly · Clear services · Easy contact</span></div>
+<div class="mock-cards"><div class="mock-card"><b>About your business</b><span>Tell customers why they should choose you.</span></div><div class="mock-card"><b>Your services</b><span>Show what you offer clearly.</span></div><div class="mock-card"><b>Photos & reviews</b><span>Build trust with visitors.</span></div><div class="mock-card"><b>Contact us</b><span>Help customers reach you.</span></div></div>
+</div></div></section>
+
+<section id="services"><div class="wrap"><div class="section-head"><h2>Website help for the business you run</h2><p>We start by understanding your goals, then recommend a website plan that fits your business.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🍽️</div><h3>Restaurants & cafés</h3><p>Menus, opening hours, location, reservations and contact details.</p></div>
+<div class="card"><div class="icon">🩺</div><h3>Clinics & professionals</h3><p>Services, staff information, appointment enquiries and directions.</p></div>
+<div class="card"><div class="icon">✂️</div><h3>Salons & barbers</h3><p>Service lists, galleries, business hours and booking enquiries.</p></div>
+<div class="card"><div class="icon">🏡</div><h3>Real estate</h3><p>Property highlights, agent profiles and enquiry forms.</p></div>
+<div class="card"><div class="icon">🛠️</div><h3>Home services</h3><p>Service areas, work examples, quote requests and phone contact.</p></div>
+<div class="card"><div class="icon">🏨</div><h3>Hotels & local shops</h3><p>Rooms or products, useful details, photos and customer enquiries.</p></div>
+</div></div></section>
+
+<section class="soft" id="how"><div class="wrap"><div class="section-head"><h2>Simple from first idea to launch</h2><p>You stay in control. We share a draft for your review before anything goes live.</p></div>
+<div class="steps">
+<div class="step"><span class="num">STEP 01</span><h3>Tell us about your business</h3><p>Share your business type, goals and the features you need.</p></div>
+<div class="step"><span class="num">STEP 02</span><h3>Get a website plan</h3><p>We suggest pages, content and a suitable design direction.</p></div>
+<div class="step"><span class="num">STEP 03</span><h3>Review your demo</h3><p>Check the draft and request changes before approving it.</p></div>
+<div class="step"><span class="num">STEP 04</span><h3>Choose how to proceed</h3><p>Agree the scope, price and hosting before the website is published.</p></div>
+</div></div></section>
+
+<section id="start"><div class="wrap form-area">
+<div class="form-info"><h2>Let's plan your website.</h2><p>Tell us a little about your business. This demo form prepares an enquiry on your device; it does not send it to us yet.</p>
+<ul><li>✓ No payment to request a plan</li><li>✓ Mobile-friendly design approach</li><li>✓ Human review before launch</li></ul></div>
+<form class="lead-form" id="leadForm">
+<div class="field"><label for="name">Your name</label><input id="name" required placeholder="e.g. Alex"></div>
+<div class="field"><label for="business">Business name</label><input id="business" required placeholder="Your business name"></div>
+<div class="field"><label for="type">Business type</label><select id="type" required><option value="">Choose one</option><option>Restaurant / Café</option><option>Clinic / Healthcare</option><option>Salon / Barber</option><option>Real Estate</option><option>Hotel / Guest House</option><option>Shop / E-commerce</option><option>Home Services</option><option>Other</option></select></div>
+<div class="field"><label for="need">What do you need?</label><textarea id="need" placeholder="Tell us about the pages or features you want..."></textarea></div>
+<div class="field"><label for="contact">Email or WhatsApp number</label><input id="contact" required placeholder="How can we contact you?"></div>
+<button class="btn" type="submit">Prepare my free website plan</button>
+<div id="toast" role="status"></div>
+<p class="disclaimer">Prototype only: your details stay in this browser and are not transmitted or stored by Smart Web AI.</p>
+</form>
+</div></section>
+
+<section id="faq" class="soft"><div class="wrap"><div class="section-head"><h2>Frequently asked questions</h2><p>Clear answers before you decide.</p></div>
+<div class="faq">
+<details><summary>Is the first website plan free?</summary><p>Yes. You can request an initial plan without paying. Any build, domain, hosting or paid service will be discussed and approved separately.</p></details>
+<details><summary>Do you build websites for every type of business?</summary><p>We can assess many types of small businesses and confirm what is practical for your requirements.</p></details>
+<details><summary>Will my website be published automatically?</summary><p>No. You review and approve the draft first. Publishing requires your approval and an agreed hosting setup.</p></details>
+<details><summary>Can I edit the website later?</summary><p>That depends on the platform and package selected. We will explain the editing options before work begins.</p></details>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>Smart Web AI</strong><br><small>Smarter websites. Clearer customer journeys.</small></div><small>© 2026 Smart Web AI · Demo concept</small></div></footer>
+<script>
+document.getElementById('leadForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const data={name:document.getElementById('name').value,business:document.getElementById('business').value,type:document.getElementById('type').value,need:document.getElementById('need').value,contact:document.getElementById('contact').value};
+ const text=`SMART WEB AI — WEBSITE ENQUIRY\\nName: ${data.name}\\nBusiness: ${data.business}\\nType: ${data.type}\\nNeeds: ${data.need}\\nContact: ${data.contact}`;
+ const box=document.getElementById('toast');box.style.display='block';box.textContent='Your enquiry draft is ready. Copy it below and send it to the agency owner:';
+ const copy=document.createElement('button');copy.className='btn secondary';copy.type='button';copy.style.marginTop='10px';copy.textContent='Copy enquiry';copy.onclick=()=>{navigator.clipboard.writeText(text).then(()=>copy.textContent='Copied!').catch(()=>{box.textContent=text;});};
+ box.appendChild(document.createElement('br'));box.appendChild(copy);
+});
+</script>
+</body></html>
